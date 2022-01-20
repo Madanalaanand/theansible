@@ -1,0 +1,10 @@
+--- 
+- name: install postgres
+  hosts: all 
+  become: yes
+  tasks: 
+    - name: install postgresql postgresql-contrib
+      apt:
+        name: postgres
+        update_cache: yes
+        state: present 
