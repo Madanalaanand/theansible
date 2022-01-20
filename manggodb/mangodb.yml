@@ -3,7 +3,7 @@
   hosts: servers
   become: true
   vars:
-    tomcat_version: 8.5.23
+    tomcat_version: 8.0.56
     
     tomcat_permissions_production: True
     
